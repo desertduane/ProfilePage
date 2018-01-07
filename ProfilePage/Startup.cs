@@ -25,6 +25,7 @@ namespace ProfilePage
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseStaticFiles();
             app.UseMvcWithDefaultRoute();
 
             app.Run(async (context) =>
