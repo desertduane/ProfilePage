@@ -12,5 +12,10 @@ namespace ProfilePage.Controllers
         {
             return View();
         }
+
+        public IActionResult Gallery()
+        {
+            return View();
+        }
     }
 }
