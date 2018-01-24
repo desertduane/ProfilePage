@@ -4,16 +4,17 @@
 
 #skills li{
     margin-right: 2em;
-    display: inline;
+    /*display: inline;*/
     
 }
 #skillsDiv{
     max-width: 300px;
 }
 
-.rotateimg90 {
+.mypic {
     height: 200px;
-    width: 150px;
-   
+    width: 250px;
 }
+
+
 
