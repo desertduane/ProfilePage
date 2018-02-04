@@ -1,15 +1,60 @@
-﻿<link rel="stylesheet" href="~/Style/Home.css" />
-@{
+﻿@{
     Layout = "_Layout";
 }
 <style>
+ 
+    body {
+        background-color: antiquewhite;
+    }
+
     #myCarousel {
-        max-width: 250px;
-        max-height: 250px;
+        max-height: 300px;
+        width: 500px;
         float: right;
-        margin-right: 1em;
+        margin-right: 10em;
+        position: relative;
+        bottom: 300px;
+    }
+
+    #skills {
+        height: 150px;
+    }
+
+    .carouselImg {
+        margin: 0 auto;
+        max-height: 300px;
+    }
+
+    #statement {
+        width: 30%;
+    }
+
+    .mypic {
+        height: 200px;
+        width: 250px;
+    }
+
+    h3 {
+        font-style: italic;
+    }
+
+    p {
+        font-family: serif;
+    }
+
+    #skills{
+        height: 200px;
+    }
+    #projects {
+        position: relative;
+        bottom: 100px;
+    }
+    div a img {
+        max-width: 300px;
+        max-height: 275px;
     }
 </style>
+
 
 <body>
     <div class="container">
@@ -20,7 +65,11 @@
                 <img class="mypic" src="~/Images/WIN_20180120_19_41_59_Pro.jpg" />
             </a>
         </div>
-        <p>This is where I put my personal statement</p>
+        <p id="statement">
+            I am a full stack software developer with a primary focus on Asp.NetCore.
+            My prior experience in the biological field reinforced my goal driven mindset,
+            to problem solve, and to see a project through to the end.
+        </p>
     </div>
 
 
@@ -34,15 +83,15 @@
 
         <div class="carousel-inner">
             <div class="item active">
-                <img src="~/Images/hawks.jpg" alt="Hawks" />
+                <img class="carouselImg" src="~/Images/hawks.jpg" alt="Hawks" />
             </div>
 
             <div class="item">
-                <img src="~/Images/hawks.jpg" alt="Hawks" />
+                <img class="carouselImg" src="~/Images/hawks.jpg" alt="Hawks" />
             </div>
 
             <div class="item">
-                <img src="~/Images/hawks.jpg" alt="Hawks" />
+                <img class="carouselImg" src="~/Images/hawks.jpg" alt="Hawks" />
             </div>
         </div>
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
@@ -55,12 +104,10 @@
         </a>
     </div>
 
-
-
     <div class="container">
         <h3>Skills</h3>
-        <div id="skillsDiv">
-            <ul id="skills">
+        <div>
+            <ul>
                 <li>C#</li>
                 <li>Azure</li>
                 <li>Visual Studio</li>
@@ -69,25 +116,25 @@
         </div>
     </div>
 
-    <div class="container">
+    <div id="projects" class="container">
         <h3>Projects</h3>
         <div class="col-lg-4">
-            <a href="https://placeholder.com">
-                <img src="http://via.placeholder.com/300x300">
+            <a href="https://alrightbooks.azurewebsites.net/">
+                <img src="~/Images/AlrightBooks.png">
             </a>
             <br />
             <p>This is a bunch of ipsum</p>
         </div>
         <div class="col-lg-4">
             <a href="https://placeholder.com">
-                <img src="http://via.placeholder.com/300x300">
+                <img src="~/Images/datastructure.png">
             </a>
             <br />
             <p>This is a bunch of ipsum</p>
         </div>
         <div class="col-lg-4">
-            <a href="https://placeholder.com">
-                <img src="http://via.placeholder.com/300x300">
+            <a href="https://stickerfire20171113054734.azurewebsites.net/">
+                <img src="~/Images/stickerfire.png">
             </a>
             <br />
             <p>This is a bunch of ipsum</p>
